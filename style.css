@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* list-style: none; */
+}
+:root{
+    --bg-color1:#0d47a1;
+    --bg-color2:#1976d2;
+    --bg-color3:#1e88e5;
+    --bg-color4:#42a5f5;
+    --bg-color5:#64b5f6;
+    --bg-color6:#e3f2fd;
+}
+.justSB{
+    justify-content: space-between;
+}
+.flexbox{
+    display: flex;
+    align-items: center;
+}
+.border{
+    border: 2px solid red;
+}
+/* ====================================================header one starts from here */
+.word-logo{
+    /* border: 2px solid red; */
+ width: 4rem;
+ height: 3rem;
+ border-radius: 50%;
+ /* position: relative;
+ z-index: 1; */
+}
+.head_title{
+    width: 100%;
+}
+.fa-sharp{
+    padding: 0.1rem 0.2rem;
+}
+.fa-floppy-disk{
+    color: var(--bg-color2);
+}
+.fa-rotate-left, .fa-arrows-rotate{
+    color: var(--bg-color5);
+}
+.head1-left-inner{
+padding: 0.3rem;
+border: 1px solid grey;
+border-radius: 1rem;
+}
+.head1-right .fa-sharp{
+    padding: 0.4rem 0.8rem;
+}
+.navbar{
+    background-color:#bbdefb;
+    color: var(--bg-color1);
+    padding: 0.2rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px;
+    padding-left: 1rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.home{
+    background-color: var(--bg-color6);
+    padding: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 0;
+}
+li:hover{
+    background-color: #e9a26c;
+    padding: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.word-styles{
+    
+    background-color: var(--bg-color6);
+    gap: 0.5rem;
+}
+.style-cut-copy-paste{
+    gap: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+}
+.style-cut-copy-paste img{
+    width: 2rem;
+    /* background-color: var(--bg-color6);  */
+
+}
+.style-cut-copy-paste h6{
+color: var(--bg-color1);
+font-size: 0.8rem;
+}
+.cut img{
+    width: 1.5rem;
+}
+.font_style_div{
+    gap: 1.2rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0.6rem 0.5rem;
+}
+select{
+    margin-bottom: 0.3rem;
+}
+.btn{
+    background-color: var(--bg-color6); 
+    border:1px solid rgb(180, 179, 179);
+    padding: 0.1rem;
+    border-radius: 5px;
+    width: 1.9rem;
+}
+.btn:hover{
+    background-color: #e9a26c;
+    padding: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overline{
+    text-decoration: line-through;
+}
+.smallA{
+    font-size: 0.7rem;
+    padding: 0.2rem 0rem;
+}
+.underlineA{
+    text-decoration:underline;
+}
+.text_align{
+    gap: 1.2rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0.6rem 0.5rem;
+}
+.text_align_row1{
+    margin-bottom: 0.5rem;
+}
+.text_Style{
+    gap: 0.5rem;
+}
+.text_style{
+    gap: 1.2rem;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    padding: 0.9rem 0.9rem;
+    text-align: center;
+}
+.row1{
+    font-family: 'Courier New', Courier, monospace;
+}
+.row2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.row3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.row4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.editing_part{
+    
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+}
+.edit_row1{
+    gap: 0.5rem;
+}
+.edit_row1 img{
+width: 1.7rem;
+border-radius: 50%;
+}
+
+
+
+/* =========================================================================main page part==================================================================================== */
+main{
+    background: linear-gradient(90deg,#abd2f2,#e3f2fd);
+    margin: 0 auto;
+}
+/* .main_text{
+    background-color: #fff;
+    margin: 1rem auto;
+    max-width: 600px !important;
+    height: 800px;
+    box-shadow: 0px 0px 5px rgb(148, 147, 147);
+    padding: 2rem;
+    border: none;
+    outline: none;
+   display: table;
+}
+pre{
+    display: table-cell;
+    text-align: center;
+    white-space: pre-wrap;
+    min-width: 500px;
+} */
+#main_text{
+    margin: 1rem auto;
+    background-color: #fff;
+    width: 50%;
+    height: 100vh;
+    box-shadow: 0px 0px 5px rgb(148, 147, 147);
+    text-align: center;
+    padding: 2rem;
+    border: none;
+    outline: none;
+
+   
+}
+
+
+
+
+
+
+
+/* ===================================================================================font family classes================================================================== */
+.userContent1{
+    font-family:'Times New Roman';
+}
+
+.userContent2{
+    font-family:'Courier New';
+    color: blue;
+}
+
+.userContent3{
+    font-family:monospace;
+}
+
+.userContent4{
+    font-family:'Franklin Gothic Medium';
+}
+
+.userContent5{
+    font-family:sans-serif ;
+    color: red;
+}
+
+.userContent6{
+    font-family:Arial ;
+}
+
+.userContent7{
+    font-family:'Gill Sans' !important;
+}
+
+.userContent8{
+    font-family:'Lucida Sans' !important;
+}
+
+.userContent9{
+    font-family:'Gill Sans' !important;
+}
+
+.userContent10{
+    font-family:Verdana !important;
+}
+
+.userContent11{
+    font-family:'Trebuchet MS' !important;
+}
+
+.userContent12{
+    font-family: Georgia !important;
+}
+
+.userContent13{
+    font-family:Verdana !important;
+}
+
+
+
+
+
+
+
+
+

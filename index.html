@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--====================================================== header one starts from here ===============================================================================-->
+    <header >
+        <div class="word-header flexbox">
+        <img src="images/images.jpg" class="word-logo">
+        <div class="head_title">
+            <div class="head1 flexbox justSB">
+                <div class="head1-left">
+                    <span class="head1-left-inner">
+                        <i class="fa-sharp fa-solid fa-floppy-disk"></i>
+                        <button onclick="formatDoc('undo')" class="undo-button">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            <!-- <span id="undo">undo(Ctrl+z)</span> -->
+                        </button>
+                        <button class="redo-button" onclick="formatDoc('redo')">
+                            <i class="fa-solid fa-rotate-right"></i>
+                            <!-- <span id="redo">redo(Ctrl+Y)</span> -->
+                        </button>
+                    </span>
+                    <i class="fa-sharp fa-solid fa-sort-down"></i>
+                </div>
+                <div class="head1-mid">
+                    <h4>Aishwarya.doc - Microsoft Word</h4>
+                </div>
+                <div class="head1-right">
+                    <i class="fa-sharp fa-solid fa-window-minimize"></i>
+                    <i class="fa-sharp fa-solid fa-window-restore"></i>
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                    
+                </div>
+
+            </div>
+            <nav class="navbar flexbox justSB">
+                <ul>
+                    <li class="home">Home</li>
+                    <li>Insert</li>
+                    <li>Page Layout</li>
+                    <li>References</li>
+                    <li>Mailings</li>
+                    <li>Review</li>
+                    <li>View</li>
+                </ul>
+                <i class="fa-solid fa-circle-question"></i>
+            </nav>
+        </div>
+        </div> 
+        <div class="word-styles flexbox">
+            <div class="style-cut-copy-paste flexbox">
+                <div class="paste_text">
+                    <img src="images/wordPaste.jpg" alt="">
+                    <h6>Paste</h6>
+                    <i class="fa-sharp fa-solid fa-sort-down"></i>
+                </div>
+                <div class="cut-copy">
+                    <div class="cut flexbox">
+                        <img src="images/scissors.jpg">
+                        <h6>Cut</h6>
+                    </div>
+                    <div class="cut flexbox">
+                        <img src="images/copy.jpg">
+                        <h6>Copy</h6>
+                    </div>
+                    <div class="cut flexbox">
+                        <img src="images/formatPainter.jpg">
+                        <h6>Format Painter</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="font_style_div">
+                <div class="font_style_row1">
+                    <!-- <select class="font_family">
+                        <option value="timesRoman">Times Roman</option>
+                        <option value="courier_New">Courier New</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+                        <option value="sans-serif">Sans-Serif</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Gill Sans">Gill Sans</option>
+                        <option value="Lucida Grande">Lucida Grande</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Trebuchet_MS">Trebuchet MS</option>
+                        <option value="Cambria">Cambria</option>
+                        <option value="Arial_Narrow_Bold">Arial Narrow Bold</option>
+                        <option value="Impact">Impact</option>
+                        <option value="cursive">Cursive</option>
+                    </select>
+                    <select class="font_weight">
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                    </select> -->
+
+                    <select id="input-font" class="input" onchange="changeFont (this);">
+                        <option value="Arial">Arial</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Sans serif">Sans serif</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Palatino">Palatino</option>
+                        <option value="Garamond">Garamond</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Arial Black">Arial Black</option>
+                        <option value="Tahoma">Tahoma</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                    </select>
+                    <select id="fontSize" onclick="changeSize()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                    </select>
+
+                    <button class="btn capA"><strong>A</strong></button>
+                    <button class="btn smallA"><strong>A</strong></button>
+                </div>
+                
+                <div class="font_style_row2">
+                    <button class="btn bold"><strong>B</strong></button>
+                    <button class="btn italic"><strong> I </strong></button>
+                    <button class="btn underline"><strong>U</strong></button>
+                    <button class="btn overline"><strong>abc</strong></button>
+                    <button class="btn subscript"><strong>X<sub>2</sub></strong></button>
+                    <button class="btn superscript"><strong>X<sup>2</sup></strong></button>
+                    <button class="btn capSmallA"><strong>Aa</strong></button>
+                    <button class="btn underlineA"><strong>A</strong></button>
+                </div>
+
+            </div>
+            <div class="text_align">
+                <div class="text_align_row1">
+                    <button class="btn unorderList"><i class="fa-sharp fa-solid fa-list"></i></button>
+                    <button class="btn unorderList"><i class="fa-sharp fa-solid fa-list-ol"></i></button>
+                    <button class="btn nestedList"><i class="fa-sharp fa-solid fa-list-check"></i></button>
+                    <button class="btn sort"><i class="fa-sharp fa-solid fa-sort"></i></button>
+                </div>
+                <div class="text_align_row2">
+                    <button class="btn leftAlign" id="shiftLeft"><i class="fa-sharp fa-solid fa-align-left"></i></button>
+                    <button class="btn justifyAlign" id="shiftJustify"><i class="fa-sharp fa-solid fa-align-justify"></i></button>
+                    <button class="btn centerAlign" id="shiftCenter"><i class="fa-sharp fa-solid fa-align-center"></i></button>
+                    <button class="btn rightAlign" id="shiftRight"><i class="fa-sharp fa-solid fa-align-right"></i></button>
+                </div>
+            </div>
+            <div class="text_Style flexbox">
+                <div class="text_style row1">
+                    <p>AaBbCcDd</p>
+                    <p>Normal</p>
+                </div>
+                <div class="text_style row2">
+                    <p>AaBbCcDd</p>
+                    <p>No space</p>
+                </div>
+                <div class="text_style row3">
+                    <p>AaBbCcDd</p>
+                    <p>Heading1</p>
+                </div>
+                <div class="text_style row4">
+                    <p>AaBbCcDd</p>
+                    <p>Heading2</p>
+                </div>
+                <div class="text_style row5">
+                    <p>AaBbCcDd</p>
+                    <p>Title</p>
+                </div>
+            </div>
+            <div class="editing_part">
+                <div class="edit_row1 flexbox">
+                    <i class="fa-sharp fa-solid fa-pencil"></i>
+                    <p>Editing</p>
+                </div>
+                <div class="edit_row1 flexbox">
+                    <img src="images/replace.jpg" alt="">
+                    <p>Replace</p>
+                </div>
+                <div class="edit_row1 flexbox">
+                    <i class="fa-sharp fa-solid fa-eye"></i>
+                    <p>Viewing</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        <main class="word_pages">
+        </br>
+            <section id="main_text" class="allbody userContent" contenteditable="true">
+                
+            </section>
+           
+            <section id="main_text" class="allbody userContent" contenteditable="true">
+                
+            </section>
+        </main>
+    
+
+    
+
+    <script src="index.js"></script>
+    <!-- <script src="pra.js"></script> -->
+</body>
+</html>
